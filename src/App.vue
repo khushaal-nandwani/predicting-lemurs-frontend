@@ -1,6 +1,10 @@
 <template>
   <div class="app-container">
-    <h1>Lemur Lifespan Prediction</h1>
+    <div class="hello">
+      <h1>Lemur Lifespan Prediction</h1> 
+      <img src="/lemur.svg" style="height: 6rem;" alt="Lemur Image" class="lemur-svg" />
+    </div>
+    
     <p>Please fill out the animal details and submit to predict captive and wild lifespan. </p>
     <p> This is the frontend to the models created in <a href="https://github.com/khushaal-nandwani/predicting-lemurs" target="_blank">this paper</a>.</p>
     <!-- Input form -->
@@ -59,6 +63,9 @@
 
       <button class="add-btn" type="button" @click="addRow">Add Another Animal</button>
       <button class="submit-btn" type="submit">Submit</button>
+
+
+
     </form>
 
     <!-- Display predictions -->
@@ -165,6 +172,14 @@ const submitForm = async () => {
 </script>
 
 <style scoped>
+
+.hello {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .app-container {
   /* min width full  */
   margin: 2rem auto;
