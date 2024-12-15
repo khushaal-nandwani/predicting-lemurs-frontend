@@ -73,7 +73,7 @@
       <h2>Predicted Lifespans</h2>
       <table>
         <thead>
-          <tr>
+          <tr class="labels-color">
             <th>Animal ID</th>
             <th>Predicted Captive Lifespan</th>
             <th>Predicted Wild Lifespan</th>
@@ -211,6 +211,11 @@ form {
   margin-bottom: 1rem;
   border-bottom: 1px solid #ddd;
   padding-bottom: 1rem;
+}
+
+.labels-color {
+  /* text color is light gray */
+  color: #f9f9f9;
 }
 
 .form-group {
